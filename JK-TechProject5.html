@@ -1,0 +1,54 @@
+<!-- 
+Project: HTML Basics
+Author: Jared Krachenfels
+Date: 10/3/2020
+ -->
+
+<!DOCTYPE html>
+<html lang="en-US"> <!--add language attribute-->
+<head> <!--Head includes the name of title and calls for the css file to style the page-->
+	<title>Tech Proj #5</title>
+	<link rel="stylesheet" href="BasicsStyle.css">
+<script type="text/javascript">
+function validateForm() {
+
+var x=document.forms["GatherUserInput"]["fname"].value;
+if (x==null || x=="") 
+  {
+   alert("First name must be filled out");
+   return false;
+  }
+
+var y=document.forms["GatherUserInput"]["lname"].value;
+if (y==null || y=="") 
+   {
+   alert("Last name must be filled out");
+   return false;
+   }
+
+var z=document.forms["GatherUserInput"]["emailID"].value;
+if (z==null || z=="") 
+   {
+    alert("Email must be filled out");
+    return false;
+   }
+}
+</script>
+</head> <!--End of head-->
+
+<body> <!--Start of body-->
+
+<h1>Jared Krachenfels & Co. - Customer Information</h1> <!--Header 1 name-->
+	
+<form name="GatherUserInput" onsubmit="return validateForm()" method="post">
+	First Name: &nbsp &nbsp &nbsp<input type="text" name="fname"><br>
+	Last Name: &nbsp &nbsp &nbsp <input type="text" name="lname"><br>
+	Email Address: &nbsp<input type="text" name="emailID"><br> 
+	<input type="submit" value="Submit">
+</form>	
+
+</body> <!--End of body-->
+
+</html> <!--End of html-->
+
+

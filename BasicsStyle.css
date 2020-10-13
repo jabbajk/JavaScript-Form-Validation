@@ -1,0 +1,9 @@
+body {text-align: center;
+      background-color: Lightgrey;}
+h1   {text-align: center;
+      color: Blue;
+      font-family: courier;
+      font-size: 150%;}
+p    {color: Black;
+      padding: 10px;}
+button {background-color: orange;}
